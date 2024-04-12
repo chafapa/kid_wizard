@@ -139,7 +139,7 @@ if (isset($_GET['keyword'])) {
                 <a href="../view/user_home.php"><span class="material-icons-outlined">dashboard</span> Home</a>
                 <a href="../view/myprojects_view.php" id="myprojects"><span class="material-icons-outlined">assignment</span> My Projects</a>
                 <a href="../view/commprojects_view.php" id="communityprojects"><span class="material-icons-outlined">language</span> Community Projects</a>
-                <a href="../view/search.php" id="search"><span class="search">search</span> Search</a>
+                <a href="../view/search.php" id="search"><span class="material-icons-outlined">search</span> Search</a>
             </nav>
         <?php } ?>
 
