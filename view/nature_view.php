@@ -21,22 +21,6 @@ $result = mysqli_query($conn, $sql);
 $projects = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
 
-// // Get the search query from the AJAX request
-// $searchQuery = $_POST['query'];
-
-// // Perform a database query to search for items
-// // Modify this query according to your database schema
-// $sql = "SELECT * FROM items WHERE item_name LIKE '%$searchQuery%'";
-// $result = mysqli_query($connection, $sql);
-
-// // Display the search results
-// if(mysqli_num_rows($result) > 0){
-//     while($row = mysqli_fetch_assoc($result)){
-//         echo "<div>" . $row['item_name'] . "</div>";
-//     }
-// } else {
-//     echo "No results found";
-// }
 ?>
 
 <!DOCTYPE html>
@@ -67,16 +51,18 @@ $projects = mysqli_fetch_all($result, MYSQLI_ASSOC);
             <nav class="navbar">
                 <a href="../admin/project_control_view.php"><span class="material-icons-outlined">dashboard</span> Home</a>
                 <a href="../admin/project_control_view.php" id="projects"><span class="material-icons-outlined">assignment</span> Manage Projects</a>
-                <a href="../view/commprojects_view.php" id="communityprojects"><span class="material-icons-outlined">language</span> Community Projects</a>
                 <a href="../view/commprojects_view.php" id="gallery"><span class="material-icons-outlined">photo_library</span> Community Gallery</a>
+                <a href="../view/search.php" id="search"><span class="material-icons-outlined">search</span> Search</a>
+
             </nav>
 
         <?php } else { ?>
             <nav class="navbar">
                 <a href="../view/user_home.php"><span class="material-icons-outlined">dashboard</span> Home</a>
                 <a href="../view/myprojects_view.php" id="myprojects"><span class="material-icons-outlined">assignment</span> My Projects</a>
-                <a href="../view/commprojects_view.php" id="communityprojects"><span class="material-icons-outlined">language</span> Community Projects</a>
                 <a href="#" id="gallery"><span class="material-icons-outlined">photo_library</span> Community Gallery</a>
+                <a href="../view/search.php" id="search"><span class="material-icons-outlined">search</span> Search</a>
+
             </nav>
         <?php } ?>
         <div class="icons">
