@@ -95,34 +95,12 @@ $projects = mysqli_fetch_all($result, MYSQLI_ASSOC);
             <a href="#"><span class="material-icons-outlined">account_circle</span> My account</a>
             <a href="../login/logout_view.php"><span class="material-icons-outlined">exit_to_app</span> Log out</a>
 
-
+s
         </form>
 
 
     </header>
-    <input type="text" id="searchInput" placeholder="Search...">
-    <button id="searchBtn">Search</button>
-
-    <div id="searchResults"></div>
-
-    <script>
-        $(document).ready(function() {
-            $("#searchBtn").click(function() {
-                var searchQuery = $("#searchInput").val();
-                $.ajax({
-                    url: "search.php",
-                    type: "post",
-                    data: {
-                        query: searchQuery
-                    },
-                    success: function(response) {
-                        $("#searchResults").html(response);
-                    }
-                });
-            });
-        });
-    </script> 
-
+  
     <section class="education" id="education">
         <br>
         <br>
