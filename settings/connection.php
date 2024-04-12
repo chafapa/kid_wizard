@@ -2,7 +2,7 @@
 
 $server= "localhost";
 $username = "root";
-$password = "";
+$password = "d8/P4qCTjCRN";
 $database = "kid_wiz";
 
 
