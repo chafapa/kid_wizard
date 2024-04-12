@@ -1,0 +1,111 @@
+/* add_project.css */
+
+/* Center the form */
+.home {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    height: 100vh;
+    /* background-color: #f9f9f9; */
+}
+
+/* Style the form container */
+.content {
+    max-width: 500px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+}
+
+/* Style form elements */
+form {
+    display: grid;
+    grid-gap: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+label {
+    font-weight: bold;
+    font-size: 2rem; /* Adjust the font size as needed */
+}
+
+/* Increase font size for input and textarea */
+input[type="text"],
+textarea {
+    font-size: 1.2rem; /* Adjust the font size as needed */
+}
+
+/* Increase font size for submit button */
+input[type="submit"] {
+    font-size: 2rem; /* Adjust the font size as needed */
+}
+
+.signup-form-box .btn {
+    padding: 0.8rem; 
+    border-radius: .5rem;
+    background-color: var(--orange);
+    color: var(--white);
+    font-size: 1.6rem; 
+    cursor: pointer;
+    border: 2px solid transparent;
+    margin-top: 1rem;
+}
+
+.signup-form-box .btn:hover {
+    background-color: var(--pink);
+    border-color: var(--white);
+}
+
+/* input[type="text"],
+input[type="email"],
+textarea {
+    resize: none;
+} */
+
+textarea {
+    resize: none; 
+    height: 100px; 
+}
+
+.difficulty-select {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px; 
+}
+
+/* .difficulty-select select {
+    background: var(--white);
+    color: var(--black);
+    padding: 8px; 
+    cursor: pointer;
+    border: 1px solid #ccc;
+} */
+
+.difficulty-select select,
+.box {
+    background: var(--white);
+    color: var(--black);
+    padding: 8px; /* Adjust padding as needed */
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
+
+.difficulty-select label {
+    margin-right: 10px;
+    /* font-size: 1.4rem; */
+    color: var(--black);
+}
+
