@@ -2,7 +2,7 @@
 
 $server= "localhost";
 $username = "root";
-$password = getenv('MYSQL_PASSWORD');
+$password = "";
 $database = "kid_wiz";
 
 
