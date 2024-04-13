@@ -4,8 +4,7 @@
 // userAvailable();
 include "../settings/core.php";
 include "../actions/get_a_project_action.php";
-// error_reporting(E_ALL);
-// ini_set("display_errors", 1);
+
 
 if (isset($_GET['project_id'])) {
     $check1 = $_GET['project_id'];

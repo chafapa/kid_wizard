@@ -1,7 +1,8 @@
 <?php
 session_start();
 include "../settings/connection.php";
-
+error_reporting(E_ALL);
+ini_set("display_errors", 1);
 function validate($input)
 {
     $input = trim($input);
@@ -71,8 +72,8 @@ function searchProjects($keyword)
 }
 
 // Check if a search keyword is provided
-if (isset($_GET['keyword'])) {
-    $input_data = $_GET['keyword'];
+if (isset($_POST['submit'])) {
+    $input_data = $_POST['keyword'];
     $search_result = searchProjects($input_data);
 
     // Display the search results
