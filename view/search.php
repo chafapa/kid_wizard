@@ -25,16 +25,18 @@
             <nav class="navbar">
                 <a href="../admin/project_control_view.php"><span class="material-icons-outlined">dashboard</span> Home</a>
                 <a href="../admin/project_control_view.php" id="projects"><span class="material-icons-outlined">assignment</span> Manage Projects</a>
-                <a href="../view/commprojects_view.php" id="communityprojects"><span class="material-icons-outlined">language</span> Community Projects</a>
                 <a href="../view/comm_gallery.php" id="gallery"><span class="material-icons-outlined">photo_library</span> Community Gallery</a>
+                <a href="../view/search.php" id="search"><span class="material-icons-outlined">search</span> Search</a>
+
             </nav>
 
         <?php } else { ?>
             <nav class="navbar">
                 <a href="../view/user_home.php"><span class="material-icons-outlined">dashboard</span> Home</a>
                 <a href="../view/myprojects_view.php" id="myprojects"><span class="material-icons-outlined">assignment</span> My Projects</a>
-                <a href="../view/commprojects_view.php" id="communityprojects"><span class="material-icons-outlined">language</span> Community Projects</a>
+                <a href="../view/comm_gallery.php" id="gallery"><span class="material-icons-outlined">photo_library</span> Community Gallery</a>
                 <a href="../view/search.php" id="search"><span class="material-icons-outlined">search</span> Search</a>
+
             </nav>
         <?php } ?>
 
@@ -50,9 +52,12 @@
             <div class="fas fa-bars" id="menu-btn"></div>
         </div>
 
-        <form action="../actions/search_action.php" method="GET" class="login-form">
-            <!-- <a href="#"><span class="material-icons-outlined">account_circle</span> My account</a> -->
+        <form action="" class="login-form">
+            <a href="#"><span class="material-icons-outlined">account_circle</span> My account</a>
+            <br>
             <a href="../login/logout_view.php"><span class="material-icons-outlined">exit_to_app</span> Log out</a>
+
+
         </form>
 
     </header>
