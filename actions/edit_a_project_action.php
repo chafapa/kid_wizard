@@ -18,7 +18,7 @@ if(isset($_POST['submit'])){
     $result = mysqli_query($conn, $sql);
 
     if($result) {
-        header("Location: ../admin/project_control_view.php");
+        // header("Location: ../admin/project_control_view.php");
     } else {
         echo "Connection failed";
     }
