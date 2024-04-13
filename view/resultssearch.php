@@ -80,16 +80,29 @@
  if (isset($_GET['result'])) {
     $search_result = $_GET['result'];
 
-    if(empty($search_result)){
-        echo "<p>{$search_result['message']}</p>";
+    // if(empty($search_result)){
+    //     echo "<p>{$search_result['message']}</p>";
 
-    }
-    foreach ($search_result['data'] as $project) {
-        echo "<div class='project'>";
-        echo "<h3>{$project['title']}</h3>";
-        echo "<p>{$project['description']}</p>";
-        echo "<p>Category: {$project['category']}</p>";
-        echo "</div>";
+    // }
+    // foreach ($search_result['data'] as $project) {
+    //     echo "<div class='project'>";
+    //     echo "<h3>{$project['title']}</h3>";
+    //     echo "<p>{$project['description']}</p>";
+    //     echo "<p>Category: {$project['category']}</p>";
+    //     echo "</div>";
+    // }
+    if (!empty($search_result)) {
+        // If $search_result is not empty, it means search results were found
+        foreach ($search_result['data'] as $project) {
+            echo "<div class='project'>";
+            echo "<h3>{$project['title']}</h3>";
+            echo "<p>{$project['description']}</p>";
+            echo "<p>Category: {$project['category']}</p>";
+            echo "</div>";
+        }
+    } else {
+        // If $search_result is empty, it means no search results were found
+        echo "No results found";
     }
 } else {
     echo "No results found";
