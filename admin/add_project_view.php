@@ -60,11 +60,6 @@ include("../settings/core.php");
         </div>
 
         <form action="" class="login-form">
-            <!-- <h3>login now</h3>
-            <input type="email" placeholder="your email" class="box">
-            <input type="password" placeholder="your password" class="box">
-            <p>forget your password <a href="#">click here</a> </p>
-            <input type="submit" value="login now" class="btn"> -->
             <a href="#"><span class="material-icons-outlined">account_circle</span> My account</a>
             <a href="../login/logout_view.php"><span class="material-icons-outlined">exit_to_app</span> Log out</a>
 
