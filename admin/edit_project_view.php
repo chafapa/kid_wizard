@@ -92,7 +92,7 @@ $url = isset($check2['image_url']) ? htmlspecialchars($check2['image_url']) : ""
             <h3>Edit Project</h3>
             <br>
             <form action="../actions/edit_a_project_action.php?id=<?php echo htmlspecialchars($check1) ?>" method="post">
-                <input type="hidden" name="cid" value="<?php echo htmlspecialchars($check2['project_id']) ?>">
+                <input type="hidden" name="project_id" value="<?php echo htmlspecialchars($check2['project_id']) ?>">
 
                 <label for="title">Title:</label>
                 <!-- <input type="text" id="title" name="title" value="<?php echo htmlspecialchars($check2['title']) ?>" required> -->

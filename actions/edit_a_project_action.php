@@ -4,7 +4,7 @@ include "../settings/connection.php";
 if(isset($_POST['submit'])){
     $projectName =  $_POST['title'];
     $overview = $_POST['overview'];
-    $projectID =  $_GET['project_id'];
+    $projectID =  $_POST['project_id'];
     $category = $_POST['category']; 
     $difficulty = $_POST['difficulty_level'];
     // $url = $_POST['image_url'];
