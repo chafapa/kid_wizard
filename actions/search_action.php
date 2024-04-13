@@ -71,21 +71,5 @@ function searchProjects($keyword)
 }
 
 // Check if a search keyword is provided
-if (isset($_POST['submit'])) {
-    $input_data = $_POST['keyword'];
-    $search_result = searchProjects($input_data);
 
-    // Display the search results
-    if ($search_result['status'] == 'success') {
-        foreach ($search_result['data'] as $project) {
-            echo "<div class='project'>";
-            echo "<h3>{$project['title']}</h3>";
-            echo "<p>{$project['description']}</p>";
-            echo "<p>Category: {$project['category']}</p>";
-            echo "</div>";
-        }
-    } else {
-        echo "<p>{$search_result['message']}</p>";
-    }
-}
 ?>
