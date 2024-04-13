@@ -116,7 +116,9 @@ $projects = mysqli_fetch_all($result, MYSQLI_ASSOC);
         <section class="activities" id="activities">
             <h1 class="heading">Nature <span> Projects</span></h1>
             <div class="box-container">
-                <?php foreach ($projects as $project) : ?>
+                <?php if(empty($projects)){
+                    echo "No projects found.";
+                }foreach ($projects as $project) : ?>
                     <div class="box" onclick="redirect(<?php echo $project['project_id']; ?>)">
                         <h3><?php echo $project['title']; ?></h3>
                         <p><?php echo $project['overview']; ?></p>

@@ -80,6 +80,10 @@
  if (isset($_GET['result'])) {
     $search_result = $_GET['result'];
 
+    if(empty($search_result)){
+        echo "No results found.";
+
+    }
     foreach ($search_result['data'] as $project) {
         echo "<div class='project'>";
         echo "<h3>{$project['title']}</h3>";
