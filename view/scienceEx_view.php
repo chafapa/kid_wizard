@@ -10,7 +10,6 @@ include "../settings/connection.php";
 // }
 
 // var_dump($_SESSION);
-$user_id = $_SESSION['personid'];
 $username = $_SESSION['firstn'];
 
 $sql = "SELECT * FROM Projects WHERE category = 2";
