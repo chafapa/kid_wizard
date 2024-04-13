@@ -16,7 +16,6 @@
 <body>
 
     <header class="header">
-
         <a href="#" class="logo"> <i class="fas fa-school"></i> Kid Wiz</a>
         <?php if ($_SESSION['role'] == 1) { ?>
             <nav class="navbar">
