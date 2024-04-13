@@ -16,6 +16,8 @@ if(isset($_POST['submit'])){
     echo 1;
 
     $result = mysqli_query($conn, $sql);
+    var_dump($result);
+
     if($result) {
         header("Location: ../admin/project_control_view.php");
     } else {
