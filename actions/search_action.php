@@ -40,7 +40,6 @@ function searchProjects($keyword)
         WHERE 
             Projects.title LIKE '%$keyword%' OR
             Projects.description LIKE '%$keyword%' OR
-            Users.first_name LIKE '%$keyword%'
         ";
 
         // Execute the query
