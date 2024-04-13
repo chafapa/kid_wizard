@@ -12,15 +12,13 @@ if(isset($_POST['submit'])){
     $description = $_POST['description'];
     $materials = $_POST['materials_needed'];
    
-    echo $projectID;
     // $sql = "UPDATE Projects SET title='$projectName' WHERE project_id='$projectID'";
     $sql = "UPDATE Projects SET title='$projectName', overview='$overview', category='$category', difficulty_level='$difficulty', description='$description', materials_needed='$materials' WHERE project_id='$projectID'";
     $result = mysqli_query($conn, $sql);
 
     if($result) {
-        echo $projectID;
 
-        // header("Location: ../admin/project_control_view.php");
+        header("Location: ../admin/project_control_view.php");
     } else {
         echo "Connection failed";
     }
