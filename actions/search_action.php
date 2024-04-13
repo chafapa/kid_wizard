@@ -1,8 +1,7 @@
 <?php
 session_start();
 include "../settings/connection.php";
-error_reporting(E_ALL);
-ini_set("display_errors", 1);
+ 
 function validate($input)
 {
     $input = trim($input);
@@ -13,6 +12,8 @@ function validate($input)
 
 function searchProjects($keyword)
 {
+    if (isset($_POST['submit'])) {
+
     global $conn;
 
     $keyword = validate($keyword);
@@ -68,8 +69,14 @@ function searchProjects($keyword)
             ];
         }
     }
-}
+}}
 
 // Check if a search keyword is provided
+if (isset($_POST['submit'])) {
+    $input_data = $_POST['keyword'];
+    $search_result = searchProjects($input_data);
 
+   header("Location: ../view/resultssearch.php");
+    
+}
 ?>

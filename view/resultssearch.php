@@ -76,25 +76,20 @@
     <br>
     <br>
     <br>
-<?php include "../actions/search_action.php";
+<?php // Display the search results
+ include "../actions/search_action.php";
 
-if (isset($_POST['submit'])) {
-    $input_data = $_POST['keyword'];
-    $search_result = searchProjects($input_data);
-
-    // Display the search results
-    if ($search_result['status'] == 'success') {
-        foreach ($search_result['data'] as $project) {
-            echo "<div class='project'>";
-            echo "<h3>{$project['title']}</h3>";
-            echo "<p>{$project['description']}</p>";
-            echo "<p>Category: {$project['category']}</p>";
-            echo "</div>";
-        }
-    } else {
-        echo "<p>{$search_result['message']}</p>";
-    }
-}?>
+ if ($search_result['status'] == 'success') {
+     foreach ($search_result['data'] as $project) {
+         echo "<div class='project'>";
+         echo "<h3>{$project['title']}</h3>";
+         echo "<p>{$project['description']}</p>";
+         echo "<p>Category: {$project['category']}</p>";
+         echo "</div>";
+     }
+ } else {
+     echo "<p>{$search_result['message']}</p>";
+ }?>
     
 
 </body>
