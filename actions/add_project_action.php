@@ -13,7 +13,7 @@ if(isset($_POST['submit'])){
     $materials = mysqli_real_escape_string($conn, $_POST['materials_needed']); // Assuming this is a textarea containing materials separated by newlines
 
     // Insert the project into the Projects table
-    $projectSql = "INSERT INTO Projects (title, description, category, difficulty_level, overview, materials_needed, creator_id, status_id) VALUES ('$title', '$description', '$category', '$difficulty_level', '$overview', '$materials', 1, 1)"; // Assuming creator_id and status_id are fixed for this example
+    $projectSql = "INSERT INTO Projects (title, description, category, difficulty_level, overview, materials_needed, creator_id) VALUES ('$title', '$description', '$category', '$difficulty_level', '$overview', '$materials', 1)"; // Assuming creator_id and status_id are fixed for this example
     $projectResult = mysqli_query($conn, $projectSql);
 
     // Get the ID of the inserted project
