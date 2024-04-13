@@ -1,7 +1,6 @@
 <?php
 include "../settings/connection.php";
-error_reporting(E_ALL);
-ini_set("display_errors", 1);
+
 if(isset($_POST['submit'])){
     $projectName =  $_POST['title'];
     $overview = $_POST['overview'];
@@ -17,7 +16,6 @@ if(isset($_POST['submit'])){
     $result = mysqli_query($conn, $sql);
 
     if($result) {
-
         header("Location: ../admin/project_control_view.php");
     } else {
         echo "Connection failed";
