@@ -9,13 +9,13 @@ ini_set("display_errors", 1);
 
 if (isset($_GET['project_id'])) {
     $check1 = $_GET['project_id'];
-    echo 1;
+    // echo 1;
 } else {
     header("Location:../admin/project_control_view.php");
-    echo 2;
+    // echo 2;
 }
 $check2 = getFunction($check1);
-echo 3;
+// echo 3;
 
 $title = isset($check2['title']) ? htmlspecialchars($check2['title']) : "";
 $url = isset($check2['image_url']) ? htmlspecialchars($check2['image_url']) : "";
