@@ -1,6 +1,7 @@
 <?php
 error_reporting(E_ALL);
 ini_set("display_errors", 1);
+session_start();
 include "../settings/connection.php";
 
 if(isset($_POST['submit'])){
@@ -13,7 +14,8 @@ if(isset($_POST['submit'])){
     $materials = mysqli_real_escape_string($conn, $_POST['materials_needed']); 
     $creator_id = mysqli_real_escape_string($conn, $_SESSION['personid']);
     // Insert the project into the Projects table
-    $projectSql = "INSERT INTO Projects (title, description, category, difficulty_level, overview, materials_needed, creator_id) VALUES ('$title', '$description', '$category', '$difficulty_level', '$overview', '$materials', '$creator_id')"; // Assuming creator_id and status_id are fixed for this example
+    $projectSql = "INSERT INTO Projects (title, description, category, difficulty_level, overview, materials_needed, creator_id) 
+    VALUES ('$title', '$description', '$category', '$difficulty_level', '$overview', '$materials', '$creator_id')"; // Assuming creator_id and status_id are fixed for this example
     $projectResult = mysqli_query($conn, $projectSql);
 
     // Get the ID of the inserted project
