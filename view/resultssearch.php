@@ -81,7 +81,7 @@
     $search_result = $_GET['result'];
 
     if(empty($search_result)){
-        echo $search_result['message'];
+        echo $_GET['message'];
 
     }
     foreach ($search_result['data'] as $project) {
