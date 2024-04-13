@@ -39,7 +39,7 @@ function searchProjects($keyword)
             Users ON Projects.creator_id = Users.user_id
         WHERE 
             Projects.title LIKE '%$keyword%' OR
-            Projects.description LIKE '%$keyword%' OR
+            Projects.description LIKE '%$keyword%'
         ";
 
         // Execute the query
