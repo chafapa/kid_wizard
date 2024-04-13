@@ -71,12 +71,13 @@ function searchProjects($keyword)
     }
 }}
 
-// Check if a search keyword is provided
-if (isset($_POST['submit'])) {
+ if (isset($_POST['submit'])) {
     $input_data = $_POST['keyword'];
     $search_result = searchProjects($input_data);
 
-   header("Location: ../view/resultssearch.php");
-    
+    $search_result_query = http_build_query(['result' => $search_result]);
+
+     header("Location: ../view/resultssearch.php?$search_result_query");
+    exit(); 
 }
 ?>

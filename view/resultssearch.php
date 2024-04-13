@@ -77,19 +77,31 @@
     <br>
     <br>
 <?php // Display the search results
- include "../actions/search_action.php";
+ if (isset($_GET['result'])) {
+    $search_result = $_GET['result'];
 
- if ($search_result['status'] == 'success') {
-     foreach ($search_result['data'] as $project) {
-         echo "<div class='project'>";
-         echo "<h3>{$project['title']}</h3>";
-         echo "<p>{$project['description']}</p>";
-         echo "<p>Category: {$project['category']}</p>";
-         echo "</div>";
-     }
- } else {
-     echo "<p>{$search_result['message']}</p>";
- }?>
+    foreach ($search_result['data'] as $project) {
+        echo "<div class='project'>";
+        echo "<h3>{$project['title']}</h3>";
+        echo "<p>{$project['description']}</p>";
+        echo "<p>Category: {$project['category']}</p>";
+        echo "</div>";
+    }
+} else {
+     echo "No search results found.";
+}
+
+//  if ($search_result['status'] == 'success') {
+//      foreach ($search_result['data'] as $project) {
+//          echo "<div class='project'>";
+//          echo "<h3>{$project['title']}</h3>";
+//          echo "<p>{$project['description']}</p>";
+//          echo "<p>Category: {$project['category']}</p>";
+//          echo "</div>";
+//      }
+//  } else {
+//      echo "<p>{$search_result['message']}</p>";
+//  }?>
     
 
 </body>
