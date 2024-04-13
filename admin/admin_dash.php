@@ -17,11 +17,13 @@
 
     <header class="header">
 
-    <a href="#" class="logo"> <i class="fas fa-school"></i> Kid Wiz</a>
+        <a href="#" class="logo"> <i class="fas fa-school"></i> Kid Wiz</a>
         <?php if ($_SESSION['role'] == 1) { ?>
             <nav class="navbar">
+                <a href="../admin/project_control_view.php"><span class="material-icons-outlined">dashboard</span> Home</a>
+                <a href="../admin/project_control_view.php" id="projects"><span class="material-icons-outlined">assignment</span> Manage Projects</a>
+                <a href="../view/comm_gallery.php" id="gallery"><span class="material-icons-outlined">photo_library</span> Community Gallery</a>
                 <a href="../view/search.php" id="search"><span class="material-icons-outlined">search</span> Search</a>
-
             </nav>
 
         <?php } else { ?>
