@@ -92,7 +92,8 @@
         echo "</div>";
     }
 } else {
-    echo $search_result['message'];
+    echo "No results found";
+    // echo $search_result['message'];
 }
 
 //  if ($search_result['status'] == 'success') {
