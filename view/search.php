@@ -78,7 +78,7 @@
     <br>
 
     <div class="search-container">
-        <form method="post" action="../actions/search_action.php" name="search-form">
+        <form method="post" action="../actions/search_action.php" name="search-form"  class="search-form">
             <input type="text" name="keyword" placeholder="Search projects...">
             <button name="submit" type="submit"><span class="material-icons-outlined">search</span></button>
         </form>
