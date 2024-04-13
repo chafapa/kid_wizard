@@ -81,7 +81,7 @@
     $search_result = $_GET['result'];
 
     if(empty($search_result)){
-        echo "No results found.";
+        echo $search_result['message'];
 
     }
     foreach ($search_result['data'] as $project) {
@@ -92,7 +92,7 @@
         echo "</div>";
     }
 } else {
-     echo "No search results found.";
+    echo $search_result['message'];
 }
 
 //  if ($search_result['status'] == 'success') {
