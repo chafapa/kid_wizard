@@ -32,7 +32,7 @@ function searchProjects($keyword)
             Projects.description,
             Projects.category,
             Projects.materials_needed,
-            Users.creator_id AS creator
+            Users.user_id AS creator
         FROM 
             Projects
         INNER JOIN 
