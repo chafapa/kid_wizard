@@ -88,4 +88,37 @@ textarea {
     resize: none;
 } */
 
+textarea {
+    resize: none; 
+    height: 100px; 
+}
+
+.difficulty-select {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px; 
+}
+
+/* .difficulty-select select {
+    background: var(--white);
+    color: var(--black);
+    padding: 8px; 
+    cursor: pointer;
+    border: 1px solid #ccc;
+} */
+
+.difficulty-select select,
+.box {
+    background: var(--white);
+    color: var(--black);
+    padding: 8px; /* Adjust padding as needed */
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
+
+.difficulty-select label {
+    margin-right: 10px;
+    /* font-size: 1.4rem; */
+    color: var(--black);
+}
 
