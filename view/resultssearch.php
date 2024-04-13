@@ -81,7 +81,7 @@
     $search_result = $_GET['result'];
 
     if(empty($search_result)){
-        echo "No results found";
+        echo "<p>{$search_result['message']}</p>";
 
     }
     foreach ($search_result['data'] as $project) {
