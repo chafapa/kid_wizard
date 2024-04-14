@@ -52,10 +52,15 @@
             <div class="fas fa-bars" id="menu-btn"></div>
         </div>
 
-              <a href="#"><span class="material-icons-outlined">account_circle</span> My account</a>
+        <form action="" class="login-form">
+            <div class="account-box">
+                <a href="#"><span class="material-icons-outlined">account_circle</span> My account</a>
+            </div>
             <br>
-            <a href="../login/logout_view.php"><span class="material-icons-outlined">exit_to_app</span> Log out</a>
- 
+            <div class="logout-box">
+                <a href="../login/logout_view.php"><span class="material-icons-outlined">exit_to_app</span> Log out</a>
+            </div>
+        </form>
     </header>
     <br>
     <br>

@@ -75,9 +75,15 @@ $projects = mysqli_fetch_all($result, MYSQLI_ASSOC);
         </div>
 
          
-            <a href="#"><span class="material-icons-outlined">account_circle</span> My account</a>
-            <a href="../login/logout_view.php"><span class="material-icons-outlined">exit_to_app</span> Log out</a>
-
+        <form action="" class="login-form">
+            <div class="account-box">
+                <a href="#"><span class="material-icons-outlined">account_circle</span> My account</a>
+            </div>
+            <br>
+            <div class="logout-box">
+                <a href="../login/logout_view.php"><span class="material-icons-outlined">exit_to_app</span> Log out</a>
+            </div>
+        </form>
 
  
 
