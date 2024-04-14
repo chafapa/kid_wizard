@@ -15,7 +15,12 @@
     text-align: center;
     /* box-shadow: 0 4px 6px rgba(0,0,0,0.1);  */
 }
-
+.about .image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* box-shadow: 0 4px 6px rgba(0,0,0,0.1);  */
+}
 .about .content1 {
     /* color: var(--black);  */
     font-size: 1.7rem;
