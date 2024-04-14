@@ -14,10 +14,7 @@
     <a href="#" class="logo"> <i class="fas fa-school"></i> Kid Wiz</a>
     <nav class="navbar">
         <a href="../view/landing_view.php">home</a>
-        <a href="about.html">about</a>
-        <a href="education.html">education</a>
-        <a href="gallery.html">gallery</a>
-        <a href="contact.html">contact</a>
+        <a href="../view/aboutUs_view.php">about</a>
     </nav>
     <div class="icons">
         <a href="login.html" class="fas fa-user" id="login-btn"></a>
