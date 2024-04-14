@@ -26,7 +26,7 @@
     <h1 class="heading"> <span>about</span> Kid Wiz</h1>
     <div class="row">
         <div class="image">
-            <img src="../images/boydash.png" alt="About Kid Wiz">
+            <!-- <img src="../images/boydash.png" alt="About Kid Wiz"> -->
         </div>
         <div class="content">
             <h3>Dive Deeper Into the World of Kid Wiz</h3>
