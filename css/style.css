@@ -158,6 +158,23 @@ section{
 }
 
 
+/* added by me */
+
+.account-box, .logout-box {
+  background-color: lightgray;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.account-box a, .logout-box a {
+  color: black;
+  text-decoration: none;
+}
+
+.account-box a:hover, .logout-box a:hover {
+  text-decoration: underline;
+}
 /* header ends */
 
 /* home */
