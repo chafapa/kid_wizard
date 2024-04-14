@@ -161,7 +161,7 @@ section{
 /* added by me */
 
 .account-box, .logout-box {
-  background-color: lightgray;
+  background-color: white;
   padding: 10px;
   border-radius: 5px;
   text-align: center;
