@@ -23,6 +23,13 @@
 
 
 <section class="about" id="about">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <h1 class="heading"> <span>about</span> Kid Wiz</h1>
     <div class="row">
         <div class="image">
