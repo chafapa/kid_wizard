@@ -129,11 +129,11 @@ section{
   transition: .4s linear;
 }
 
-.header .login-form h3{
+/* .header .login-form h3{
   font-size: 2.5rem;
   text-transform: uppercase;
   color: var(--black);
-}
+} */
 
 .header .login-form .box{
   width: 100%;
