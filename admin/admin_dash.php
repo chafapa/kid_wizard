@@ -36,7 +36,7 @@
             </nav>
         <?php } ?>
 
-        <!-- <div class="icons">
+        <div class="icons">
             <a href="#" class="fas fa-user" id="login-btn">
                 <?php
                 $username = $_SESSION['firstn'];
@@ -45,7 +45,13 @@
                 }
                 ?>
             </a>
-        </div> -->
+        </div>
+
+        <!-- <form action="" class="login-form">
+            <a href="#"><span class="material-icons-outlined">account_circle</span> My account</a>
+            <br>
+            <a href="../login/logout_view.php"><span class="material-icons-outlined">exit_to_app</span> Log out</a>
+        </form> -->
 
         <form action="" class="login-form">
             <div class="account-box">
@@ -55,12 +61,6 @@
             <div class="logout-box">
                 <a href="../login/logout_view.php"><span class="material-icons-outlined">exit_to_app</span> Log out</a>
             </div>
-        </form>
-
-        <form action="" class="login-form">
-            <a href="#"><span class="material-icons-outlined">account_circle</span> My account</a>
-            <br>
-            <a href="../login/logout_view.php"><span class="material-icons-outlined">exit_to_app</span> Log out</a>
         </form>
 
         <!-- <div class="form-wrapper">
