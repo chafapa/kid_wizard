@@ -35,7 +35,7 @@
         <div class="image">
             <img src="../images/boydash.png" alt="About Kid Wiz">
         </div>
-        <div class="content">
+        <div class="content1">
             <h3>Dive Deeper Into the World of Kid Wiz</h3>
             <p>Kid Wiz is a magical place where learning and fun intersect, creating unforgettable experiences for kids. Founded by a team of passionate educators and parents, Kid Wiz aims to ignite the spark of curiosity in every child, making education an adventure filled with excitement and discovery.</p>
             <p>Our journey began with a simple question: How can we make learning so engaging that kids always come back for more? This question led us to create Kid Wiz, a platform where kids can explore various subjects through interactive lessons, games, and creative projects.</p>
